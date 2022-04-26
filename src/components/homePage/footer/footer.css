@@ -1,0 +1,16 @@
+.footer-container {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: #d9759b;
+}
+.footer-container p {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    color: white;
+}
+.footer-container .button-margin{
+    
+}

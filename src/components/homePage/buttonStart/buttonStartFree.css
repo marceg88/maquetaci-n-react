@@ -1,0 +1,28 @@
+.button-start button {
+    background-color: #d77599;
+    border: 1px solid #d77599;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 50%;
+    height: 40px;
+}
+.button-start-transparent button {
+    background-color: #d77599;
+    opacity: 0.4;
+    border: 1px solid #d77599;   
+    border-radius: 50px;
+    width: 50%;
+    min-width: 233px;
+    height: 40px;
+}
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}

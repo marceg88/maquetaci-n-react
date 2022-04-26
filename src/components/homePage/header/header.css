@@ -1,0 +1,86 @@
+:root {
+    --pink:  #d77599;
+    
+}
+nav {
+    position: relative;
+    background-image: url('../../../asset/imgs/copenhagen-denmark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to top, #353e4d 50px);
+    /* color: transparent; */
+    filter: grayscale(100%);
+    width: 100%;
+    height: 300px;
+}
+nav .nav-menu-container {
+    display: flex;
+    width: 100%;
+}
+nav .nav-title {
+    display: flex;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.nav-title h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+}
+.nav-title p {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #e8eeef ;
+    text-transform: uppercase;
+}
+.nav-menu {
+    display: flex;
+    width: 50%;
+}
+.nav-menu .nav-menu-services {
+    width: 100%;
+}
+.nav-icon-menu.bars {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+}
+.nav-icon-menu.bars .icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+.nav-item {
+    display: none;
+}
+.nav-item.show {
+    display: block;
+    margin: 3rem 0 1rem 0;
+}
+.nav-item a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    /* color: #353e4d; */
+}
+.nav-title-button {
+    position: absolute;
+    margin-top: -220px;
+}
+.nav-title-button h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 0 20px 0 20px;
+    margin: 0 15px;
+    text-align: center;
+    color: white;
+}
+.nav-title-button .nav-button-start {
+    margin-top: 20px;
+    margin-left: 25px;
+}
