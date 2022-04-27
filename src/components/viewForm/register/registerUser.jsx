@@ -79,7 +79,7 @@ function SignUp() {
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md="6" controlId="validationCustomConfirmedPassword">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Comfirmed Password</Form.Label>
           <Form.Control 
             name="confirmedPassword"
             type="password" 
