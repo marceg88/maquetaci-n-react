@@ -6,6 +6,8 @@ import CardPeople from './components/homePage/informationPeople/cardPeople/cardP
 import People from './components/homePage/informationPeople/containerPeople';
 import Footer from './components/homePage/footer/footer';
 import HomePage from './components/homePage/homePage';
+import SignUp from './components/viewForm/register/registerUser';
+import SignIn from './components/viewForm/login/login';
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       {/* <CardPeople/> */}
       {/* <People/> */}
       {/* <Footer/> */}
-      <HomePage/>
+      {/* <HomePage/> */}
+      {/* <SignUp /> */}
+      {/* <SignIn /> */}
     </div>
   );
 }
