@@ -1,0 +1,175 @@
+nav {
+    position: relative;
+    background-image: url('../../../asset/imgs/copenhagen-denmark.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    z-index: 1; 
+    width: 100%;
+    height: 300px;
+}
+nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000bb, #4c73c79a);
+    z-index: -1;
+}
+nav .nav-menu-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-title {
+    display: flex;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav-title h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+}
+.nav-title p {
+    font-size: 1.8rem;
+    margin-top: 12px;
+    margin-left: 5px;
+    font-weight: 500;
+    color: #9ca7b7 ;
+    text-transform: uppercase;
+}
+nav .nav-menu-services {
+    /* position: relative; */
+    display: flex;
+    padding-top: 0;
+    margin-top: 20px;
+    margin-left: 90px;
+    max-width: 140rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-menu-services li  {
+    color: #e8eeef;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+nav li:hover  {
+    text-decoration-line: underline;
+    text-decoration-color:  #d17194;
+    font-size: 1rem;
+}
+.nav-menu-services .icon {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    color: white ;
+}
+.nav-item {
+    display: none;
+}
+.nav-item.show {
+    display: block;
+    margin: 0.5rem 0 0 0;
+}
+.nav-icon-menu.bars {
+    display: block;
+    margin: 0;
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+}
+nav{
+    position: relative;
+}
+nav .nav-title-button {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-title-button h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    padding: 0 20px 0 20px;
+    margin: 50px 15px 15px 10px;
+    text-align: center;
+    color: white;
+}
+.nav-button-start button {
+    background-color: #d77599;
+    border: 1px solid #d77599;
+    text-transform: uppercase;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 250px;
+    height: 40px;
+} 
+/* .nav-title-button {
+    position: absolute;
+    margin-top: -220px;
+}
+.nav-title-button h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 0 20px 0 20px;
+    margin: 0 15px;
+    text-align: center;
+    color: white;
+}
+.nav-title-button .nav-button-start {
+    margin-top: 20px;
+    margin-left: 25px;
+} */
+@media only screen and (min-width: 37.5em) {
+    nav {
+        padding: 0 2rem;
+        height: 400px;
+    }
+    
+    nav .nav-menu-services {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    nav .nav-menu-services li {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .nav-menu-services li span {
+        padding-left: 30px;
+        border-left: 1px solid #e8eeef;
+    }
+
+    .nav-item {
+        display: block;
+    }
+
+    .navbar-icon-menu.bars {
+        display: none;
+    }
+    nav .nav-title-button {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .nav-title-button h1{
+        font-size: 3.4rem;
+    }
+}

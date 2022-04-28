@@ -1,7 +1,7 @@
 import ButtonStartFree from "../buttonStart/buttonStartFree"
-import "./footer.css"
+import "./footerMovil.css"
 
-function Footer(){
+function FooterMovil(){
   return(
     <div className="footer-container">
       <p>No obligations or contacts. Achoo Influencer Plataform is available to all advertisers</p>
@@ -13,4 +13,4 @@ function Footer(){
   )
 }
 
-export default Footer
+export default FooterMovil

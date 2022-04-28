@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500&display=swap');
+html, body {
+  font-size: 62.5%;
+  font-family:'DM Sans', sans-serif;
+}
+.container-view {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.container-form-register {
+    display: flex;
+    width: 80%;
+    margin-top: 50px;
+    flex-direction: column;
+    font-size: 1.2rem;   
+    justify-content: center;
+    align-items: center;  
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+.container-top {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #ca6288;
+}
+.container-direction {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #9ca7b7 ;
+}
+.container-direction h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    
+    align-items: center;
+    width: 100%;
+}
+.container-columns-form {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 50px; */
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+.form-right {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.button {
+    width: 300px;
+    border-radius: 50px;
+}
+.login {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #9ca7b7;
+}
+@media only screen and (min-width: 37.5em){
+    .container-form-register {
+        width: 70%;
+        max-width: 800px;
+    }
+    .container-columns-form {
+        flex-direction: row;
+    }
+}

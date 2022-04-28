@@ -2,21 +2,22 @@
     --pink:  #d77599;
     
 }
-nav {
+/* nav {
     position: relative;
     background-image: url('../../../asset/imgs/copenhagen-denmark.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background: linear-gradient(to top, #353e4d 50px);
-    /* color: transparent; */
+   
     filter: grayscale(100%);
     width: 100%;
     height: 300px;
-}
-nav .nav-menu-container {
+} */
+nav {
     display: flex;
     width: 100%;
+    height: 60px;
 }
 nav .nav-title {
     display: flex;
@@ -25,16 +26,19 @@ nav .nav-title {
     margin-left: 10px;
 }
 .nav-title h2 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     font-weight: bold;
-    color: white;
+    /* color: white; */
 }
 .nav-title p {
-    font-size: 0.8rem;
-    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-top: 12px;
     margin-left: 5px;
-    color: #e8eeef ;
+    /* color: #e8eeef ; */
     text-transform: uppercase;
+}
+nav ul {
+    list-style: none;
 }
 .nav-menu {
     display: flex;
@@ -53,8 +57,9 @@ nav .nav-title {
 .nav-icon-menu.bars .icon {
     width: 20px;
     height: 20px;
-    color: white;
+    /* color: white; */
 }
+
 .nav-item {
     display: none;
 }
@@ -68,7 +73,14 @@ nav .nav-title {
     text-transform: uppercase;
     /* color: #353e4d; */
 }
+nav{
+    position: relative;
+}
 .nav-title-button {
+    position: absolute;
+    margin-top: -220px;
+}
+/* .nav-title-button {
     position: absolute;
     margin-top: -220px;
 }
@@ -83,4 +95,4 @@ nav .nav-title {
 .nav-title-button .nav-button-start {
     margin-top: 20px;
     margin-left: 25px;
-}
+} */

@@ -27,9 +27,12 @@ function People(){
     <div className="container-people">
       <div className="container-text">
         <h2>Our People</h2>
-        <p>Behind Achoo is a dedicated team of digital marketing experts, client-focused relationship managers, data nerds and bloggers whose ambition is helping clients achieve awesome influencer marketing result.</p>
+        <p>Behind Achoo is a dedicated team of digital marketing experts, client-focused relationship managers, data nerds and bloggers whose ambition is helping clients achieve awesome influencer marketing results.</p>
       </div>
+      <div className="container-people-lg">
       {data.map(item => <CardPeople key={item.id}{...item} />)}
+      </div>
+      
     </div>
     
   )
