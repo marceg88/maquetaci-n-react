@@ -6,30 +6,33 @@ import { logout, selectUser } from "../../../store/userSlice";
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+import "./userProfile.css"
 
 function UserProfile(){
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const user = useSelector(selectUser)
-  // useEffect(() => {
-  //   navigate("/")
-  // }, [dispatch])
   
   return(
-    <div>
+    <div className="cotainer-profile">
+      <div className="button-logout">
       {user?
       <div className="icon-logout">
         <button onClick={() => dispatch(logout())}><Link to="/">logout</Link></button>
-      <ArrowRight />
+      
       </div>
       :
       <div className="icon-logout">
         <button onClick="#">logout</button>
-      <ArrowRight />
+      
       </div>
       }
+      </div>
+      <div className="container-inf-reports">
       <CardInformationUser/>
       <CardReportViews/>
+      </div>
+      
     </div>
   )
 }

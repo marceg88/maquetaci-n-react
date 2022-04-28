@@ -4,11 +4,13 @@ import {useEffect, useState} from "react"
 import "./login.css"
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { selectUserLoginState, userLogin } from "../../../store/userSlice";
+import { selectUser, selectUserLoginState, userLogin } from "../../../store/userSlice";
 
 function SignIn(){
   const dispatch = useDispatch()
   const navigate = useNavigate()
+  const user = useSelector(selectUser)
+  const { id: userId } = user.id
   const { message, status } = useSelector(selectUserLoginState)
   const [todo, setTodo] = useState({});
 
